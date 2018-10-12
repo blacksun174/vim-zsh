@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/Users/Genkou/Downloads/beginning-thymeleaf-master/src/main/java/com/example'
+let g:netrw_dirhist_2='/Users/Genkou/Downloads/example-kotlin-server-/src/main/kotlin'
+let g:netrw_dirhist_3='/Users/Genkou/Downloads/example-kotlin-server/src/jaxrs'
+let g:netrw_dirhist_4='/Users/Genkou/PycharmProjects'
+let g:netrw_dirhist_5='/Users/Genkou/Documents/GitHub/comment_arrange_newspicks'
