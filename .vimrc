@@ -18,6 +18,7 @@ if dein#load_state('~/.cache/dein')
  call dein#add('~/.cache/dein')
  call dein#add('scrooloose/nerdtree')
  call dein#add('tpope/vim-fugitive')
+ call dein#add('yuttie/comfortable-motion.vim')
  call dein#add('Shougo/deoplete.nvim')
  call dein#add('tomtom/tcomment_vim')
  call dein#add('nathanaelkane/vim-indent-guides')
@@ -68,23 +69,23 @@ nnoremap <silent><C-e> :NERDTreeToggle<CR>
 " Vim Indent Guides
 """"""""""""""""""""""""""""""
 "define custom colors instead of using the ones the plugin automatically generates for me
-let g:indent_guides_auto_colors = 0
-autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=3
-autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=4
-" colorscheme file
-hi IndentGuidesOdd  guibg=red   ctermbg=3
+" let g:indent_guides_auto_colors = 0
+" autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=3
+" autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=4
+" " colorscheme file
+" hi IndentGuidesOdd  guibg=red   ctermbg=3
 " key bind
-noremap <C-I> :IndentGuidesEnable<CR>
-noremap <C-O> :IndentGuidesDisable<CR>
-noremap <C-U> :IndentGuidesToggle<CR>
-hi IndentGuidesEven guibg=green ctermbg=4
+" noremap <C-I> :IndentGuidesEnable<CR>
+" noremap <C-O> :IndentGuidesDisable<CR>
+" noremap <C-U> :IndentGuidesToggle<CR>
+" hi IndentGuidesEven guibg=green ctermbg=4
 " vimを立ち上げたときに、自動的にvim-indent-guidesをオンにする
-let g:indent_guides_enable_on_vim_startup = 1
+" let g:indent_guides_enable_on_vim_startup = 1
 " タブ文字の表示幅
 set tabstop=2
 " Vimが挿入するインデントの幅
 set shiftwidth=2
-filetype plugin indent on
+" filetype plugin indent on
 
 
 """"""""""""""""""""""""""""
@@ -120,3 +121,5 @@ nnoremap <C-h> :vsp<CR> :exe("tjump ".expand('<cword>'))<CR>
 nnoremap <C-k> :split<CR> :exe("tjump ".expand('<cword>'))<CR>
 
 let mapleader = "\<Space>"
+:imap jj <ESC>
+
