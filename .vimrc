@@ -14,6 +14,7 @@ set runtimepath+=~/.cache/dein/repos/github.com/Shougo/dein.vim
 if dein#load_state('~/.cache/dein')
  call dein#begin('~/.cache/dein')
  
+ call dein#add('reedes/vim-wheel')
  call dein#add('Shougo/unite.vim')
  call dein#add('~/.cache/dein')
  call dein#add('scrooloose/nerdtree')
@@ -88,6 +89,7 @@ set shiftwidth=2
 " filetype plugin indent on
 
 
+"B
 """"""""""""""""""""""""""""
 " Not Plugin setting
 """"""""""""""""""""""""""""
@@ -123,3 +125,7 @@ nnoremap <C-k> :split<CR> :exe("tjump ".expand('<cword>'))<CR>
 let mapleader = "\<Space>"
 :imap jj <ESC>
 
+"setting of vim-whell plugin
+" let g:wheel#map#mouse = 1
+let g:wheel#map#up   = '<C-[>'
+let g:wheel#map#down = '<C-]>'
