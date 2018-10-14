@@ -129,3 +129,5 @@ let mapleader = "\<Space>"
 " let g:wheel#map#mouse = 1
 let g:wheel#map#up   = '<C-[>'
 let g:wheel#map#down = '<C-]>'
+" enable trackpad
+set mouse=a
